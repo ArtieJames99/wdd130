@@ -1,0 +1,166 @@
+/* Add your CSS here to style your halloween page */
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    width: 100vw;
+    background-color: #323031;
+    color:#FF9100;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: end;
+    gap: 30px;
+    font-size: 1.2em;
+    padding-right: 30px;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav li:hover{
+    color:#d93a34;
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;      /* was min-height */
+}
+
+main {
+    flex:1;
+    display: grid;
+    min-height: 0;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto 1fr;
+    position: relative;
+    width: 100%;
+}
+
+main h1, 
+main img {
+    grid-column: 1/-1;
+}
+
+main h1{
+    font-size: 5.5em;
+    width:100%;
+    text-align: center;
+    padding-top: 100px;
+    color:#ffbd17;
+    text-shadow: 5px 4px 4px #323031;
+    font-family: 'creepster', cursive;
+
+}
+
+
+main img {
+    position: absolute;
+    top: -200px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    clip-path: inset(0 0 25% 0);
+}
+
+main section {
+    grid-row: 2;
+    z-index: -2;
+    background-color: #FF9100;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    padding-top: 20vh;
+
+}
+main h2{
+    margin:0;
+    padding: 15px -5 0 15px;
+    text-align: center;
+    font-family: 'creepster', cursive;
+    width: 100%;
+    background-color: #323031;
+    color: #d93a34;
+    
+}
+
+main p {
+    margin:0;
+    padding: 10px -5 15px 15px;
+    text-align: center;
+    width:100%;
+    background-color: #323031;
+    color: #d93a34;
+    min-height: 150px;
+}
+
+
+footer {
+    background-color: #323031;
+    color: #FF9100;
+    padding: 15px;
+
+}
+
+/* Phone sizing */
+
+@media (max-width: 768px) {
+
+    div {
+        height: auto;         
+        min-height: 100vh;   
+    }
+
+    nav ul {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+        padding: 0 10px;
+        font-size: 1em;
+    }
+
+    main {
+        grid-template-columns: 1fr;  
+        grid-template-rows: auto;   
+    }
+
+    main h1 {
+        font-size: 2.5em;
+        padding-top: 40px;
+    }
+
+    main img {
+        top: 0;
+        height: 300px;              
+        clip-path: none;
+    }
+
+    main section {
+        grid-row: auto;               
+        justify-content: flex-start;
+        padding: 0;
+    }
+
+    main section:first-of-type { /* Had to do some searching to figure this out*/
+        padding-top: 200px;           
+    }
+
+    main p {
+        min-height: 0;              
+    }
+}

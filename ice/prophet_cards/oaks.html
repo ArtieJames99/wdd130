@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dallin H. Oaks</title>
+    <style>
+        body {
+            background: #FFECD7;
+            text-align: center;
+        }
+
+        .container {
+            width: 220px;
+            padding: 20px;
+            margin: 50px auto;
+            background-color: #008db1;
+            border-radius: 25px;
+            border: #004e63 solid 3px;
+        }
+
+        .content {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-areas:
+                "name"
+                "subtitle"
+                "image"
+                "details"
+                "quote";
+            justify-items: center;
+            width: 200px;
+        }
+
+        .name {
+            grid-area: name;
+            margin: 0;
+            color: #fffffe;
+            font-size: 30px;
+            font-weight: 400;
+            line-height: 1.1;
+            font-family: Helvetica, Arial, sans-serif;
+        }
+
+        .subtitle {
+            grid-area: subtitle;
+            margin: 1px 0 10px;
+            color: #91e4fb;
+            font-size: 11px;
+            line-height: 1.2;
+
+            font-family: Helvetica, Arial, sans-serif;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        .content img {
+            grid-area: image;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin: 0;
+            border: #fffffe solid 3px;
+        }
+
+        .details {
+            grid-area: details;
+            justify-self: center;
+        }
+
+        .content ul {
+            margin: 0 auto;
+            padding-left: 18px;
+            text-align: left;
+            color: #fffffe;
+            font-size: 12px;
+            font-weight: 300;
+            line-height: 1.25;
+            font-family: Helvetica, Arial, sans-serif;
+        }
+
+        .quote {
+            grid-area: quote;
+            width: 205px;
+            margin: 30px 0 4px 10px;
+            color: #ffd783;
+            font-family: "Brush Script MT", "Nanum Brush Script", cursive;
+            font-size: 13.5px;
+            justify-self: center;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h1 class="name">Dallin H. Oaks</h1>
+            <a class="subtitle" href="https://www.churchofjesuschrist.org/study/manual/teachings-spencer-w-kimball/the-life-and-ministry-of-spencer-w-kimball?lang=eng">18th President of the Church of Jesus Christ of Latter-day Saints</a>
+            <img src="images/oaks.webp" alt="President Oaks">
+            <div class="details">
+                <ul>
+                    <li>Born: Aug 12, 1932</li>
+                    <li>Apostle: Apr 7, 1984</li>
+                    <li>Prophet: Oct 14, 2025</li>
+                </ul>
+            </div>
+            <p class="quote">“The only permanent solution to the differences that divide us is for all of us to follow our Savior's teachings and to gradually become even as he is.”</p>
+        </div>
+    </div>
+</body>
+</html>

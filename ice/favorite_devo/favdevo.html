@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Favorite Devotionals</title>
+  <link rel="stylesheet" href="styles/styles.css" />
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="header-image">
+        <h1>My Favorite<br>Devotionals</h1>
+      </div>
+    </header>
+    <main>
+      <div class="content-box">
+            <table>
+              <tr>
+                <th>Speaker</th>
+                <th>Title</th>
+                <th>Location</th>
+                <th>Year</th>
+              </tr>
+              <tr>
+                <td>Elder Holland</td>
+                <td><a href="https://speeches.byu.edu/talks/jeffrey-r-holland/lessons-liberty-jail/">Lessons from Liberty Jail</a></td>
+                <td>BYU Provo</td>
+                <td>2008</td>
+              </tr>
+          </table>
+        <div class="form">
+          <h3>Add your Own</h3>
+          <form>
+            <lable for="speaker">Speaker:</lable>
+            <input type="text" id="speaker" name="name" required>
+
+            <lable for="title">Title:</lable>
+            <input type="text" id="title" name="name" required>
+
+            <lable for="location">location:</lable>
+            <select id="location" name="location">
+              <option value="">Choose the Location</option>
+              <option value="byu-provo">BYU Provo</option>
+              <option vlaue="byu-idaho">BYU Idaho</option>
+              <option value="online">Online</option>
+              <option value="other">Other</option>
+            </select>
+
+            <lable for="year">Year:</lable>
+            <input type="text" id="year" name="name" required>
+
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

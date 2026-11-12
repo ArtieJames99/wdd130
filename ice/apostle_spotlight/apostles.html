@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apostles Spotlights</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            color: #e8eced;
+            font-family: Arial, sans-serif;
+            background: #062a55 url("images/christus.webp") center / cover fixed no-repeat;
+        }
+
+        .spotlight {
+            max-width: 980px;
+            margin: 0 auto;
+            padding: 30px;
+        }
+
+        h1, h2 {
+            margin: 0;
+            text-align: center;
+            text-shadow: 0 2px 3px rgba(0, 0, 0, .7);
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            font-size: 48px;
+        }
+
+        h2 {
+            margin: 25px 0 20px;
+            font-size: 30px;
+        }
+
+        .fpresidency,
+        .quorum {
+            display: grid;
+            justify-items: center;
+            align-items: center;
+            margin: 0 auto;
+        }
+
+        .fpresidency {
+            grid-template-columns: repeat(3, 1fr);
+            max-width: 620px;
+            gap: 20px;
+        }
+
+        .quorum {
+            grid-template-columns: repeat(4, 1fr);
+            max-width: 600px;
+            gap: 20px;
+        }
+
+        img {
+            display: block;
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border: 10px solid #e8eced;
+            border-radius: 50%;
+        }
+
+        img:hover {
+            border-color: #168dcc;
+        }
+
+        .counselor {
+            width: 140px;
+            height: 140px;
+        }
+
+        .president {
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="spotlight">
+        <header>
+            <h1>First Presidency</h1>
+            <div class="fpresidency">
+                <img class="counselor" src="images/eyring.webp" alt="President Eyring">
+                <img class="president" src="images/oaks.webp" alt="President Oaks">
+                <img class="counselor" src="images/christofferson.webp" alt="Elder Christofferson">
+            </div>
+        </header>
+        <main>
+            <h2>Quorum of the Twelve Apostles</h2>
+            <div class="quorum">
+                <img src="images/uchtdorf.webp" alt="Elder Uchtdorf">
+                <img src="images/bednar.webp" alt="Elder Bednar">
+                <img src="images/cook.webp" alt="Elder Cook">
+                <img src="images/anderson.webp" alt="Elder Anderson">
+                <img src="images/rasband.webp" alt="Elder Rasband">
+                <img src="images/stevenson.webp" alt="Elder Stevenson">
+                <img src="images/renlund.webp" alt="Elder Renlund">
+                <img src="images/gong.webp" alt="Elder Gong">
+                <img src="images/soares.webp" alt="Elder Soares">
+                <img src="images/kearon.webp" alt="Elder Kearon">
+                <img src="images/causse.webp" alt="Elder Causse">
+                <img src="images/gilbert.webp" alt="Elder Gilbert">
+            </div>
+        </main>
+    </div>
+</body>
+</html>
